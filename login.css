@@ -1,0 +1,9 @@
+* {margin:0; padding: 0; box-sizing: border-box;}
+/* 이것을 사용하면 다닥다닥 붙어보이게 할 수 있음 */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
