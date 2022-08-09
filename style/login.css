@@ -1,0 +1,21 @@
+* {margin:0; padding: 0; box-sizing: border-box;}
+
+.container, .welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.button {
+    position: relative;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {display: none;}

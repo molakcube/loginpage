@@ -1,9 +1,20 @@
-const signIn = document.querySelector("#signinZone");
+const signIn = document.querySelector(".signinForm");
 const id = document.querySelector(".id input");
 const pw = document.querySelector(".pw input");
 
-function  createID (event) {
+function  createId (event) {
     event.preventDefault();
-    localStorage.setItem(id.value, pw.value);
+    const idValue = id.value;
+    const pwValue = pw.value;
+    localStorage.setItem(idValue, pwValue);
+    successCreate ();
 }
-signIn.addEventListener("submit",createID);
+
+function successCreate () {
+    const main = document.querySelector(".container");
+    const welcome = document.querySelector(".success");
+    main.classList.toggle("hidden");
+    welcome.classList.toggle("hidden");
+}
+
+signIn.addEventListener("submit",createId);

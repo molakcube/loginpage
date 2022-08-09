@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-in</title>
+    <link rel="stylesheet" href="style/signin.css">
 </head>
 <body>
-    <div id="container">
+    <div class="success hidden">
+        <h1>Success Creating ID!</h1>
+        <a href="login.html">go to login!</a>
+    </div>
+    <div class="container">
         <header class="logoZone">
             <h1>SIGN-IN PAGE</h1>
         </header>
         <main id="signinZone">
-            <form class="singinForm">
+            <form class="signinForm">
                 <div class="id">
                     <input type="text" required>
                     <label for="id">USER NAME</label>
@@ -30,6 +35,6 @@
             <a href="login.html">Go to login</a>
         </footer>
     </div>
-    
 </body>
+<script src="src/signin.js"></script>
 </html>
