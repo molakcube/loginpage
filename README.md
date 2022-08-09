@@ -1,10 +1,13 @@
+구현한 기능
+
+1. localstorage에 sginin 페이지에서 받은 아이디와 패스워드 저장
+2. login 페이지에서 localstorage에서의 값을 가져와 id와 pw 비교후, 적절한 알림창 표시
+3. login과 signin 성공했을 때 화면 표시
+4. localstorage 비우는 버튼 추가
+
 이번에 구현한 기능
 
-1. JS추가
-2. localstorage에 sginin 페이지에서 받은 아이디와 패스워드 저장
-3. login 페이지에서 localstorage에서의 값을 가져와 id와 pw 비교후, 적절한 알림창 표시
-4. login과 signin 성공했을 때 화면 표시
-5. localstorage 비우는 버튼 추가
+1. if문에 else가 존재하지 않아 비밀번호와 아이디가 일치하지 않아도 WELCOME이 출력되던 현상 수정
 
 다음에 해볼 것
 

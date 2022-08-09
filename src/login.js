@@ -18,8 +18,8 @@ function checkId (event) {
     if (checkLog === null) {
         alert("아이디가 존재하지 않습니다")
     } else if(checkLog != pwValue) {
-        alert("비밀번호를 확인하세요")
-    } successLogin ();
+        alert("비밀번호를 확인하세요")     
+    } else successLogin ();
 }
 
 function successLogin () {
