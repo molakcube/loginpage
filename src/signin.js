@@ -13,8 +13,6 @@ function inspectValue( filledId, filledPw) {
     const regExp = /^[A-Za-z0-9]{4,10}$/;
     const checkId = regExp.test(filledId);
     const checkPw = regExp.test(filledPw);
-    console.log(checkId);
-    console.log(checkPw);
     const checkTrue = checkId && checkPw;
     if (checkTrue == true) {
         localStorage.setItem(filledId, filledPw);
