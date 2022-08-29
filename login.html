@@ -8,30 +8,32 @@
     <link rel="stylesheet" href="style/login.css">
 </head>
 <body>
-    <div class="welcome hidden">
-        <h1>WELCOME!</h1>
-    </div>
     <div class="container">
-        <header class="logoZone">
-            <h1>LOG-IN PAGE</h1>
-        </header>
-        <main id="loginZone">
-            <form class="loginForm">
-                <div class="id">
-                    <input type="text" required>
-                    <label for="id">USER NAME</label>
-                </div>
-                <div class="pw">
-                    <input type="password" required>
-                    <label for="pw">PASSWORD</label>
-                </div>
-                <div class="button">
-                    <button>LOGIN</button>
-                </div>
-            </form>
+        <header></header>
+        <nav></nav>
+        <main>
+            <div class="logo-zone">
+                LOGIN
+            </div>
+            <div id="login-zone">
+                <form class="loginForm">
+                    <div class="id">
+                        <label for="id">Email</label>
+                        <input id="id" type="text" required>
+                    </div>
+                    <div class="pw">
+                        <label for="pw">Password</label>
+                        <input id="pw" type="password" required>
+                    </div>
+                    <button class="button" type="submit">LOGIN</button>
+                </form>
+            </div>
+            <div class="welcome hidden">
+                <h1>WELCOME!</h1>
+            </div>
         </main>
-        <footer id="sign_in">
-            <a href="sign-in.html">Didn't have ID?</a>
+        <footer id="sign-in">
+            <span>Need an account? </span><a href="sign-in.html">SIGN UP</a>
             <button>reset storage</button>
         </footer>
     </div>
