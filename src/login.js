@@ -30,4 +30,3 @@ function successLogin () {
 }
 
 login.addEventListener("submit",checkId);
-resetbutton.addEventListener("click", (cleanStorage) => {localStorage.clear()});
