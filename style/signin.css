@@ -76,3 +76,12 @@ input {
     #log-in a {
         color: rgb(88, 88, 88);
     }
+
+.none {
+    display: none;
+}
+
+.show {
+    color: red;
+    font-size: 13px;
+}

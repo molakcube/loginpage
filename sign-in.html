@@ -32,11 +32,21 @@
             <form class="signinForm">
                 <div class="id">
                     <label for="id">Email</label>
-                    <input id="id" type="text" required>
+                    <input id="id" type="text" onkeyup="idKeyevent()" required>
+                    <span id="wrong-id" class="none">이메일 형식이 아닙니다.</span>
                 </div>
                 <div class="pw">
                     <label for="pw">Password</label>
-                    <input id="pw" type="password" required>
+                    <input id="pw" type="password" onkeyup="pwKeyevent()" required>
+                    <span id="wrong-pw" class="none">
+                        영어 대소문자, 숫자, 특수문자가 최소 하나 이상 포함되어야 합니다.
+                    </span>
+                    <span id="too-short" class="none">
+                        비밀번호는 최소 6글자 이상이어야 합니다.
+                    </span>
+                    <span id="too-long" class="none">
+                        비밀번호는 20글자를 넘길 수 없습니다.
+                    </span>
                 </div>
                 <button class="button" type="submit">CREATE ACCOUNT</button>
             </form>
