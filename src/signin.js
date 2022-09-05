@@ -3,6 +3,8 @@ const id = document.querySelector(".id input");
 const pw = document.querySelector(".pw input");
 const password = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{6,20}/g;
 
+userInformation = [];
+
 function inspectValue(event) {
     const regEmail = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
     const regPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,10}/g;
@@ -27,7 +29,6 @@ function inspectValue(event) {
 }
 
 function successCreate(id, pw) {
-    const userInformation = [];
     const users = {
         id: id,
         pw: pw
